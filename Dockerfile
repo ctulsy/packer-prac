@@ -5,10 +5,10 @@ FROM openjdk:8
 RUN mkdir -p /usr/src/myapp
 
 # COPY APPLICTAION COde
-COPY target/spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar    /usr/src/myapp
+COPY target/sample-prac-1.0.jar    /usr/src/myapp
 
 # Setup Working DIR
 WORKDIR /usr/src/myapp
 
 # Start the Bot Service
-CMD ["java", "-jar", "spring-boot-sample-atmosphere-1.4.0.BUILD-SNAPSHOT.jar"]
+CMD ["java", "-jar", "sample-prac-1.0.BUILD-SNAPSHOT.jar"]
